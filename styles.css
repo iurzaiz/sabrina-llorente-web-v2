@@ -1,0 +1,314 @@
+@charset "UTF-8";
+
+@font-face {
+	font-family: "SephoraDisplayBook";
+	src: url("fonts/SephoraSerifDisplayDigital-Book.otf");
+  }
+@font-face {
+	font-family: "SephoraDisplayLight";
+	src: url("fonts/SephoraSerifDisplayDigital-Light.otf");
+  }
+@font-face {
+	font-family: "SephoraDisplayLightItalic";
+	src: url("fonts/SephoraSerifDisplayDigital-LightItalic.otf");
+  }
+
+/*Loader page gif
+#loader{
+	position: fixed;
+	width: 100%;
+	height: 100vh;
+	background: #ffffff url('./images/symbols/loader.gif') no-repeat center;
+
+	z-index: 999;
+	margin-left: 0px;
+	padding-left: 0;
+}
+fin loader page*/
+/* Start image grid*/
+.row {
+	display: flex;
+	flex-wrap: wrap;
+	padding: 0 4px;
+  }
+  
+  /* Create four equal columns that sits next to each other */
+  .column-1 {
+	flex: 30%;
+	max-width: 30%;
+	padding: 0 3px;
+  }
+  .column-2 {
+	flex: 30%;
+	max-width: 30%;
+	padding: 0 3px;
+  }
+  .column-3 {
+	flex: 40%;
+	max-width: 40%;
+	padding: 0 3px;
+  }
+  
+  .column-1 .column-2 .column-3 img {
+	margin-top: 8px;
+	vertical-align: middle;
+	width: 100%;
+  }
+  
+  /* Responsive layout - makes a two column-layout instead of four columns */
+  @media screen and (max-width: 800px) {
+	.column {
+	  flex: 50%;
+	  max-width: 50%;
+	}
+  }
+  
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+	.column {
+	  flex: 100%;
+	  max-width: 100%;
+	}
+  }
+/* End image grid */
+
+body{
+	margin: 0;
+	height: 100%;
+	cursor: url("./images/symbols/cursor.png"), pointer;
+}
+a{
+	text-decoration: none;
+	color: #000;
+}
+h3{
+    font-family: "kepler-std-display", KeplerStd-LightDisp, Times, serif;
+    font-size: 40px;
+    letter-spacing: 0px; 
+    font-weight: 300;	
+    line-height: 90%;
+    margin: 0;
+    padding: 0;
+}
+
+h4{
+    font-family: "kepler-std-display", KeplerStd-LightItDisp, Times, serif;
+    font-size: 25px;
+    letter-spacing: 0px; 
+    font-weight: 300;	
+    font-style: italic;
+    margin: 0;
+    padding: 0;
+}
+.underlogo-about, 
+.underlogo-works{
+    font-family: "futura-pt-bold", FuturaStd-Bold, sans-serif;
+    font-size: 10px;
+    letter-spacing: 3px; 
+    text-transform: uppercase;
+    font-weight: 700;
+    margin: 0;
+    padding: 0;
+}
+
+
+.white {
+	background-color: #f8f8f5;
+	transition: background-color .5s linear;
+    -moz-transition: background-color .5s linear;
+    -webkit-transition: background-color .5s linear;
+    -o-transition: background-color .5s  linear;
+}
+
+.logo{
+	position: relative;
+	display: block;
+	text-align: center;
+	font-weight: 300;
+    font-size: 90px;    
+    height: auto; 
+    color: #000;
+    left: 0;
+	/*top: 270px;*/
+	width: 1000px;
+    min-height: 100px;
+	margin: 0 auto;
+	font-family: "SephoraDisplayBook";
+	letter-spacing: 7px;
+	
+}
+
+.underlogo {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin: 0 47px;
+
+}
+
+
+#projects{
+	overflow: hidden;
+	padding-left: 0px;
+	padding-right: 0px;
+	position: relative;
+	/*margin-top: 1000px;*/
+	height: auto;
+	width: 100%;
+	margin-bottom: 800px;
+}
+
+.image_project{
+	width: 100%;	
+	overflow: hidden;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	display:block
+}
+
+
+.project_box {
+	position:relative;
+	overflow: hidden;
+}
+  
+.project_box > div {
+	position:absolute;
+	top:0;
+	left:0;
+	z-index:-30;
+	padding: 10px;
+	margin: 0;
+}
+  
+.desvanecer:hover {
+	opacity: 0.07;
+	-webkit-transition: opacity 500ms;
+	-moz-transition: opacity 500ms;
+	-o-transition: opacity 500ms;
+	-ms-transition: opacity 500ms;
+	transition: opacity 500ms;
+}
+
+
+.project_info{
+	font-family: "SephoraDisplayBook" !important;
+	height: 100%;
+	width: 100%;
+	margin-top: 20px;
+	padding-left: 30px !important;
+	padding-top: 30px !important;
+	text-align: left;
+}
+
+.letraBlanca{
+	color: white !important;
+}
+
+.letraNegra{
+	color: black;
+}
+
+
+/*clase de los titulos de los trabajos*/
+.titulo{
+	font-size: 35px;
+	letter-spacing: 3px;
+	line-height: 37px;
+}
+
+/*clase de los subtitulos de los trabajos*/
+.subtitulo{
+	font-size: 15px;
+}
+
+.mt-n10mio{
+	margin-top: -10.6% !important;
+}
+.mt-n120mio{
+	/*
+	margin-top: -102.3% !important;
+	*/
+}
+.mt-n105mio{
+	margin-top: -96.2% !important;
+}
+.mt-n12mio{
+	margin-top: -12.8% !important;
+}
+.mt-n6mio{
+	margin-top: -2.2% !important;
+}
+
+@media screen and (max-width:768px){
+	.logo{
+		width: 100%;
+		font-size: 350%;
+		max-width: 350px;
+		min-width: 350px;
+	}	
+	.mt-n10mio{
+		margin-top: 0 !important;
+	}
+	.mt-n120mio{
+		margin-top: 0 !important;
+	}
+	.mt-n105mio{
+		margin-top: 0 !important;
+	}
+	.mt-n12mio{
+		margin-top: 0 !important;
+	}
+	.mt-n6mio{
+		margin-top: 0 !important;
+	}
+	/*clase de los titulos de los trabajos*/
+	.titulo{
+		margin-top: 30px!important;
+		font-size: 60px !important;
+		letter-spacing: 3px!important;
+		line-height: 60px!important;
+	}
+
+	/*clase de los subtitulos de los trabajos*/
+	.subtitulo{
+		font-size: 15px !important;
+	}
+}
+
+
+		
+
+@media screen and (max-width:1039px){
+	.logo{
+		width: 80%;
+		text-align: center;
+	}	
+	.underlogo{
+		visibility: hidden;
+	}
+
+	.project_info{
+		font-family: "SephoraDisplayBook" !important;
+		height: 100%;
+		width: 100%;
+		margin-top: 20px;
+		padding-left: 25px !important;
+		padding-top: 15px !important;
+		text-align: left;
+	}
+
+
+	.titulo{
+		font-size: 25px;
+		letter-spacing: 2px;
+		line-height: 27px;
+	}
+
+	.subtitulo{
+		font-size: 7px;
+	}
+	
+
+}

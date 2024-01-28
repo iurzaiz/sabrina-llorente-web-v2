@@ -1,0 +1,94 @@
+@charset "UTF-8";
+
+@font-face {
+	font-family: "SephoraDisplayBook";
+	src: url("../../fonts/SephoraSerifDisplayDigital-Book.otf");
+  }
+@font-face {
+	font-family: "SephoraDisplayLight";
+	src: url("../../fonts/SephoraSerifDisplayDigital-Light.otf");
+  }
+@font-face {
+	font-family: "SephoraDisplayLightItalic";
+	src: url("../../fonts/SephoraSerifDisplayDigital-LightItalic.otf");
+  }
+
+.container{
+    margin-top:100px;
+}
+.title{
+    font-family: "SephoraDisplayLightItalic" !important;
+    height: 100%;
+	margin-top: 20px;
+	padding-left: 30px !important;
+	padding-top: 30px !important;
+    text-align: left;
+    font-size: 300%;
+    letter-spacing: 3px;
+    
+}
+
+.description{
+    font-family: "SephoraDisplayLight" !important;
+    height: 100%;
+	width: 100%;
+	margin-top: 20px;
+	padding-left: 30px !important;
+	padding-top: 30px !important;
+    text-align: left;
+    font-size: 220%;
+}
+
+.credits{
+    
+	margin-top: -50px;
+	padding-left: 30px !important;
+    
+}
+
+.works{
+    margin-top: 100px;
+}
+
+
+.flanco-derecho{
+    margin-top: 200px;
+    margin-bottom: 200px;
+    text-align: center;
+}
+.flanco-izquierdo{
+    text-align: center;
+}
+
+.goback{
+    text-decoration: none;
+    text-align: center;
+    font-size: 260%;
+    font-family: "SephoraDisplayLight" !important;
+    letter-spacing: 3px;
+    margin-top:150px;
+    margin-bottom: 100px;
+}
+
+
+
+@media screen and (max-width:768px){
+    .title,
+    .description,
+    .credits, 
+    .credit-title{
+        text-align: left;
+    }
+
+    .credits{
+        text-align: right;
+        margin-top: -70px;
+    }
+    .flanco-derecho, .flanco-izquierdo{
+        text-align: center !important;
+        size: 100% !important;
+        margin-right: auto;
+        margin-top: 75px;
+    }
+
+}

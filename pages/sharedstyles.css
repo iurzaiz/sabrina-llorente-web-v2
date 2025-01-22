@@ -46,7 +46,7 @@
     height: 100%;
 	width: 100%;
     font-size: 78%;
-    max-width: 70%;
+    max-width: 80%;
     text-align: left;
 }
 
@@ -58,16 +58,8 @@
     margin-top:100px;
 }
 
-.container-works{
-    margin-top: 400px;
-}
-div{
-    margin:0px;
-}
-
 
 .footer {
-    position: sticky;
     bottom: 0;
     margin: 0;
     padding: 0;
@@ -75,27 +67,31 @@ div{
     height: 60px;
     line-height: 60px;
     background-color: transparent;
-    border-top: 1px solid black;
+    text-align: center;
+    
 }
-.autorPagina{
-    font-family: "futura-pt-bold", FuturaStd-Bold, sans-serif;
-    font-size: 10px;
-    letter-spacing: 3px; 
+
+.backToProjects {
+    font-family: "SephoraDisplayLight";
+    font-size: 15px;
+    letter-spacing: 3px;
     text-transform: uppercase;
     font-weight: 700;
-    margin: 0;
-    padding: 0;
+    margin: 7% auto; /* Center the pill in the footer */
+    padding: 0px 20px;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 50px;
+    display: inline-block;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
-.backToProjects{
-    font-family: "futura-pt-bold", FuturaStd-Bold, sans-serif;
-    font-size: 10px;
-    letter-spacing: 3px; 
-    text-transform: uppercase;
-    font-weight: 700;
-    margin: 0;
-    padding: 0;
-    text-align: right;
+
+.stretched-text {
+    display: inline-block; /* Ensure the transformation only applies to the text */
+    transform: scaleY(1.2); /* Stretch the text vertically */
+    transform-origin: center; /* Ensure the stretching happens from the center of the text */
 }
+
 
 .goback{
     text-decoration: none;

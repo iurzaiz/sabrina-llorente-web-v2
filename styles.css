@@ -163,7 +163,6 @@ h4{
 	padding-left: 0px;
 	padding-right: 0px;
 	position: relative;
-	/*margin-top: 1000px;*/
 	height: auto;
 	width: 100%;
 	margin-bottom: 800px;
@@ -181,7 +180,6 @@ h4{
 
 .project_box {
 	position:relative;
-	overflow: hidden;
 }
   
 .project_box > div {
@@ -189,7 +187,6 @@ h4{
 	top:0;
 	left:0;
 	z-index:-30;
-	padding: 10px;
 	margin: 0;
 }
   
@@ -252,6 +249,39 @@ h4{
 }
 .mt-n6mio{
 	margin-top: -2.2% !important;
+}
+
+.footer {
+    bottom: 0;
+    margin: 0;
+    padding: 0;
+    width: 90%;
+    height: 60px;
+    line-height: 60px;
+    background-color: transparent;
+    text-align: center;
+    
+}
+
+.backToProjects {
+    font-family: "SephoraDisplayLight";
+    font-size: 15px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin: 7% auto; /* Center the pill in the footer */
+    padding: 0px 20px;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 50px;
+    display: inline-block;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.stretched-text {
+    display: inline-block; /* Ensure the transformation only applies to the text */
+    transform: scaleY(1.2); /* Stretch the text vertically */
+    transform-origin: center; /* Ensure the stretching happens from the center of the text */
 }
 
 @media screen and (max-width:768px){

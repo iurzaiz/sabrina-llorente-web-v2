@@ -103,6 +103,9 @@
     margin-bottom: 100px;
 }
 
+.img-fluid {
+    object-fit: cover;
+}
 
 
 @media screen and (max-width:768px){

@@ -13,6 +13,7 @@
 	src: url("../fonts/SephoraSerifDisplayDigital-LightItalic.otf");
   }
 
+
 .project-title{
     font-family: "SephoraDisplayLightItalic" !important;
     height: 100%;
@@ -23,6 +24,21 @@
     font-size: 300%;
     
 }
+
+.same-height-images {
+    display: flex;
+    align-items: stretch; /* Ensures both columns are equal height */
+}
+
+.same-height-images .col-md-6 {
+    display: flex;
+}
+
+.custom-img {
+    height: 100%;
+    object-fit: cover; /* Maintains aspect ratio while filling space */
+}
+
 
 .white {
 	background-color: #f8f8f6;

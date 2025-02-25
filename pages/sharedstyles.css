@@ -45,6 +45,7 @@
 }
 
 .short-description{
+    padding-left: 30px !important;
     font-family: "SephoraDisplayLight" !important;
     height: 100%;
 	width: 100%;

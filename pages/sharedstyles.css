@@ -92,6 +92,57 @@
     
 }
 
+.img-fluid {
+    object-fit: cover;
+}
+.primary-button {
+    background-color: var(--gold);
+    color: var(--black);
+    text-align: center;
+    text-transform: uppercase;
+    border: 1px solid #000;
+    border-radius: 50px;
+    flex-wrap: nowrap;
+    align-items: center;
+    padding: 8px 20px;
+    font-size: 18px;
+    line-height: 120%;
+    position: relative;
+    display: inline-flex; /* Ensures the button only takes up as much space as needed */
+    max-width: fit-content; /* Prevents the button from expanding to full width */
+    width: fit-content; 
+}
+.button-arrow {
+    z-index: 2;
+    align-items: center;
+    padding-left: 12px;
+    display: flex;
+    position: relative;
+}
+.button-arrow-line {
+    background-color: #323232;
+    width: 35px;
+    height: 2px;
+}
+.arrow-tip {
+    width: 8px;
+    height: 8px;
+    margin-left: -2px;
+    font-size: 0;
+    line-height: 0%;
+}
+.back-btn {
+    background: none;  /* Removes default button background */
+    border: none;  /* Removes border */
+    font: inherit;  /* Inherits font styles from parent */
+    color: inherit;  /* Inherits text color */
+    cursor: pointer;  /* Keeps it clickable */
+    padding: 0;  /* Removes default padding */
+    outline: none; /* Removes focus outline */
+    padding: 5px 0px;
+    font-family: "SephoraDisplayLight" !important;
+}
+
 .backToProjects {
     font-family: "SephoraDisplayLight";
     font-size: 15px;
@@ -101,31 +152,8 @@
     margin: 7% auto; /* Center the pill in the footer */
     padding: 0px 20px;
     text-align: center;
-    border: 1px solid black;
-    border-radius: 50px;
     display: inline-block;
     transition: background-color 0.3s ease, color 0.3s ease;
-}
-
-.stretched-text {
-    display: inline-block; /* Ensure the transformation only applies to the text */
-    transform: scaleY(1.2); /* Stretch the text vertically */
-    transform-origin: center; /* Ensure the stretching happens from the center of the text */
-}
-
-
-.goback{
-    text-decoration: none;
-    text-align: center;
-    font-size: 260%;
-    font-family: "SephoraDisplayLight" !important;
-    letter-spacing: 3px;
-    margin-top:150px;
-    margin-bottom: 100px;
-}
-
-.img-fluid {
-    object-fit: cover;
 }
 
 
@@ -158,3 +186,4 @@
         visibility: hidden;
     }
 }
+

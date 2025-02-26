@@ -263,26 +263,6 @@ h4{
     
 }
 
-.backToProjects {
-    font-family: "SephoraDisplayLight";
-    font-size: 15px;
-    letter-spacing: 3px;
-    text-transform: uppercase;
-    font-weight: 700;
-    margin: 7% auto; /* Center the pill in the footer */
-    padding: 0px 20px;
-    text-align: center;
-    border: 1px solid black;
-    border-radius: 50px;
-    display: inline-block;
-    transition: background-color 0.3s ease, color 0.3s ease;
-}
-
-.stretched-text {
-    display: inline-block; /* Ensure the transformation only applies to the text */
-    transform: scaleY(1.2); /* Stretch the text vertically */
-    transform-origin: center; /* Ensure the stretching happens from the center of the text */
-}
 
 @media screen and (max-width:768px){
 	.logo{

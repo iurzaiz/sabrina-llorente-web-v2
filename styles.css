@@ -255,32 +255,54 @@ h4{
     text-align: center;
     
 }
+@media screen and (max-width: 500px) {
+	.column-1, .column-2, .column-3 {
+		flex: 100%;
+		max-width: 100%;
+	}
+	.logo{
+		width: 100%;
+		font-size: 350%;
+		max-width: 350px;
+		min-width: 350px;
+	}
+	/*clase de los titulos de los trabajos*/
+	.titulo{
+		margin-top: 30px!important;
+		font-size: 20px !important;
+		letter-spacing: 3px!important;
+	}
+
+	/*clase de los subtitulos de los trabajos*/
+	.subtitulo{
+		font-size: 20px !important;
+	}
+}
 
 
-/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 800px) {
-.column-1, .column-2, .column-3 {
-	flex: 100%;
-	max-width: 100%;
-}
-.logo{
-	width: 100%;
-	font-size: 350%;
-	max-width: 350px;
-	min-width: 350px;
-}
-/*clase de los titulos de los trabajos*/
-.titulo{
-	margin-top: 30px!important;
-	font-size: 60px !important;
-	letter-spacing: 3px!important;
-	line-height: 60px!important;
-}
+	.column-1, .column-2, .column-3 {
+		flex: 100%;
+		max-width: 100%;
+	}
+	.logo{
+		width: 100%;
+		font-size: 350%;
+		max-width: 350px;
+		min-width: 350px;
+	}
+	/*clase de los titulos de los trabajos*/
+	.titulo{
+		margin-top: 30px!important;
+		font-size: 60px !important;
+		letter-spacing: 3px!important;
+		line-height: 60px!important;
+	}
 
-/*clase de los subtitulos de los trabajos*/
-.subtitulo{
-	font-size: 20px !important;
-}
+	/*clase de los subtitulos de los trabajos*/
+	.subtitulo{
+		font-size: 20px !important;
+	}
 }
 		
 
@@ -290,6 +312,9 @@ h4{
 		text-align: center;
 	}	
 	.underlogo{
+		visibility: hidden;
+	}
+	.underline-title{
 		visibility: hidden;
 	}
 	.project_info{
@@ -310,6 +335,4 @@ h4{
 	.subtitulo{
 		font-size: 12px;
 	}
-	
-
 }

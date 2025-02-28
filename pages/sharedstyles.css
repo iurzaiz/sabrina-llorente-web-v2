@@ -186,5 +186,18 @@
     .autorPagina{
         visibility: hidden;
     }
+    .back-btn {
+        background: none;  /* Removes default button background */
+        border: none;  /* Removes border */
+        font: inherit;  /* Inherits font styles from parent */
+        color: inherit;  /* Inherits text color */
+        cursor: pointer;  /* Keeps it clickable */
+        padding: 0;  /* Removes default padding */
+        outline: none; /* Removes focus outline */
+        padding: 5px 0px;
+        font-family: 'Museo Sans Rounded' !important;
+        font-weight: 250;
+        font-size: 17px;
+    }
 }
 

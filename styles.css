@@ -35,17 +35,17 @@ fin loader page*/
   /* Create four equal columns that sits next to each other */
   .column-1 {
 	flex: 30%;
-	max-width: 28%;
+	max-width: 26%;
 	padding: 0 3px;
   }
   .column-2 {
 	flex: 30%;
-	max-width: 28%;
+	max-width: 31%;
 	padding: 0 3px;
   }
   .column-3 {
 	flex: 40%;
-	max-width: 44%;
+	max-width: 43%;
 	padding: 0 3px;
   }
   
@@ -66,21 +66,7 @@ fin loader page*/
 	width: 100%;
   }
   
-  /* Responsive layout - makes a two column-layout instead of four columns */
-  @media screen and (max-width: 800px) {
-	.column {
-	  flex: 50%;
-	  max-width: 50%;
-	}
-  }
-  
-  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-  @media screen and (max-width: 600px) {
-	.column {
-	  flex: 100%;
-	  max-width: 100%;
-	}
-  }
+
 /* End image grid */
 
 body{
@@ -218,13 +204,15 @@ h4{
 
 
 .project_info{
-	font-family: "SephoraDisplayBook" !important;
+	
 	height: 100%;
 	width: 100%;
 	margin-top: 20px;
 	padding-left: 30px !important;
 	padding-top: 30px !important;
 	text-align: left;
+	padding-right: 30px !important;
+	
 }
 
 .letraBlanca{
@@ -238,14 +226,22 @@ h4{
 
 /*clase de los titulos de los trabajos*/
 .titulo{
+	font-family: "SephoraDisplayLightItalic" !important;
 	font-size: 35px;
-	letter-spacing: 3px;
+	/* letter-spacing: 3px; */
 	line-height: 37px;
+	font-weight: 300;
 }
+
 
 /*clase de los subtitulos de los trabajos*/
 .subtitulo{
 	font-size: 15px;
+}
+
+.bold{
+	font-family: "SephoraDisplayBook" !important;
+	font-weight: bold;
 }
 
 .footer {
@@ -261,43 +257,31 @@ h4{
 }
 
 
-@media screen and (max-width:768px){
-	.logo{
-		width: 100%;
-		font-size: 350%;
-		max-width: 350px;
-		min-width: 350px;
-	}	
-	.mt-n10mio{
-		margin-top: 0 !important;
-	}
-	.mt-n120mio{
-		margin-top: 0 !important;
-	}
-	.mt-n105mio{
-		margin-top: 0 !important;
-	}
-	.mt-n12mio{
-		margin-top: 0 !important;
-	}
-	.mt-n6mio{
-		margin-top: 0 !important;
-	}
-	/*clase de los titulos de los trabajos*/
-	.titulo{
-		margin-top: 30px!important;
-		font-size: 60px !important;
-		letter-spacing: 3px!important;
-		line-height: 60px!important;
-	}
-
-	/*clase de los subtitulos de los trabajos*/
-	.subtitulo{
-		font-size: 15px !important;
-	}
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+.column-1, .column-2, .column-3 {
+	flex: 100%;
+	max-width: 100%;
+}
+.logo{
+	width: 100%;
+	font-size: 350%;
+	max-width: 350px;
+	min-width: 350px;
+}
+/*clase de los titulos de los trabajos*/
+.titulo{
+	margin-top: 30px!important;
+	font-size: 60px !important;
+	letter-spacing: 3px!important;
+	line-height: 60px!important;
 }
 
-
+/*clase de los subtitulos de los trabajos*/
+.subtitulo{
+	font-size: 20px !important;
+}
+}
 		
 
 @media screen and (max-width:1039px){
@@ -308,7 +292,6 @@ h4{
 	.underlogo{
 		visibility: hidden;
 	}
-
 	.project_info{
 		font-family: "SephoraDisplayBook" !important;
 		height: 100%;
@@ -316,18 +299,16 @@ h4{
 		margin-top: 20px;
 		padding-left: 25px !important;
 		padding-top: 15px !important;
+		padding-right: 25px !important;
 		text-align: left;
 	}
-
-
 	.titulo{
 		font-size: 25px;
 		letter-spacing: 2px;
 		line-height: 27px;
 	}
-
 	.subtitulo{
-		font-size: 7px;
+		font-size: 12px;
 	}
 	
 

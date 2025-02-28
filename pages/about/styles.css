@@ -28,7 +28,7 @@
     font-size: 100%;
 }
 .descripcion3{
-    font-family: "SephoraDisplayLight";
+    font-family: "SephoraDisplayBook";
     font-size: 120%;
     margin-bottom: 10%;
 }
@@ -56,15 +56,7 @@
     margin-bottom: 20%;
     margin-top: 2%;
 }
-.goback{
-    text-decoration: none;
-    text-align: center;
-    font-size: 150%;
-    font-family: "SephoraDisplayLight" !important;
-    letter-spacing: 3px;
-    margin-top:20% !important;
 
-}
 .icon{
     float: left;
     width: 90% !important;
@@ -75,6 +67,20 @@
 }
 .logo-margin {
     margin-top: 20px; /* Adjust the value as needed */
+}
+
+.back-btn {
+    background: none;  /* Removes default button background */
+    border: none;  /* Removes border */
+    font: inherit;  /* Inherits font styles from parent */
+    color: inherit;  /* Inherits text color */
+    cursor: pointer;  /* Keeps it clickable */
+    padding: 0;  /* Removes default padding */
+    outline: none; /* Removes focus outline */
+    padding: 5px 0px;
+    font-family: 'Museo Sans Rounded' !important;
+    font-weight: 250;
+    font-size: 27px;
 }
 
 

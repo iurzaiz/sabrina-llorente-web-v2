@@ -140,11 +140,12 @@
     padding: 0;  /* Removes default padding */
     outline: none; /* Removes focus outline */
     padding: 5px 0px;
-    font-family: "SephoraDisplayLight" !important;
+    font-family: 'Museo Sans Rounded' !important;
+    font-weight: 250;
+    font-size: 27px;
 }
 
 .backToProjects {
-    font-family: "SephoraDisplayLight";
     font-size: 15px;
     letter-spacing: 3px;
     text-transform: uppercase;

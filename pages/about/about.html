@@ -18,11 +18,11 @@
 </head>
 
 <body class="white col-md-12">
-    <div class="logo mx-auto">
+    <div class="logo mx-auto logo-margin">
         SABRINA LLORENTE
         </br>
         <div class="underlogo">
-            <a href="#projects" class="text-decoration-none text-reset">
+            <a href="../../index.html" class="text-decoration-none text-reset">
                 <div class="underlogo-works">
                     WORKS
                 </div>
@@ -34,40 +34,22 @@
             </a>
         </div>
     </div>
-    <div class="row no-gutters contenedor">
-        <div class="img col-xl-6 my-auto">
-            <img src="./img/ABOUT-04.png" width="100%" class=" my-auto" alt="">
+    <hr style="border: 1px solid #000;" id="projects">
+        <div class="underline-title no-gutters" >
+            ABOUT
         </div>
-        <div class="info col-xl-3 col-md-12 offset-2 my-auto mx-auto">
+    <div class="row no-gutters contenedor" >
+        <div class="img col-md-6 my-auto">
+            <img src="./img/image.png" width="100%" alt="" style="margin-top: -400px;">
+        </div>
+        <div class="info col-md-4 my-auto mx-auto">
             <p class="presentacion">
                 Hey there,<br>
                 I’m Sabrina.</p>
-            <p class="descripcion1">I am an interdisciplinary illustrator and designer based in Toronto.</p>
+            <p class="descripcion1">I am an interdisciplinary illustrator and designer based in Berlin.</p>
             <p class="descripcion2">I have collaborated and designed for brands such as Sephora, Indigo Chapters, TJX
                 Canada, FCA Canada, Urban Planet, At Home, among others.</p>
             <p class="descripcion3">I’m available for collaborations and would love to chat with you!</p>
-            
-            <div class="row">
-                <div class="col-2 my-auto" style="display: flex;">
-                    <a href="mailto:sllorente91@gmail.com" class="text-decoration-none text-reset">
-                        <img src="./img/icon-05.png" class="icon my-auto mx-auto w-sm-100">
-                    </a>
-                </div>
-                <div class="col-10 my-auto no-gutters" style="display: flex; margin-left: -4%;">
-                    <p class="mail my-auto">CONTACT ME</p><br>
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-2 my-auto" style="display: flex;">
-                    <a href="https://www.instagram.com/sabrinallorente/" class="text-decoration-none text-reset">
-                        <img src="./img/icon-06.png" class="icon my-auto mx-auto" width="90%">
-                    </a>
-                </div>
-                <div class="col-10 my-auto no-gutters" style="display:flex; margin-left: -4%;">
-                    <p class="instagram my-auto">FOLLOW MY WORK ON INSTAGRAM</p><br>
-                </div>
-            </div>
 
             <div class="row">
                 <div class="col-12 my-auto" style="display: flex;">
@@ -88,11 +70,31 @@
                     </a>
                 </div>
             </div>
-
-            
-
         </div>
     </div>
+    <script>
+        $(window).on("load", function() {
+            // Animate loader off screen
+            $("#loader").fadeOut("slow");
+        });
+    
+        function adjustLayout() {
+            var ventana_ancho = $(window).width();
+            var ventana_alto = $(window).height();
+            var marginTopLogo = (ventana_alto / 2) - $(".logo").height();
+            
+            $(".logo").css("top", marginTopLogo);
+            $("#projects").css("top", ventana_alto - $(".logo").height());
+        }
+    
+        $(document).ready(function() {
+            adjustLayout();
+        });
+    
+        $(window).resize(function() {
+            adjustLayout();
+        });
+    </script>
 </body>
 
 </html>

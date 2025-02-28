@@ -73,6 +73,9 @@
     margin-top: 4%;
     margin-bottom: 4%;
 }
+.logo-margin {
+    margin-top: 20px; /* Adjust the value as needed */
+}
 
 
 @media screen and (max-width:1200px){

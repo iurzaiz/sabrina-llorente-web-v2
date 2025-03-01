@@ -204,7 +204,6 @@ h4{
 
 
 .project_info{
-	
 	height: 100%;
 	width: 100%;
 	margin-top: 20px;
@@ -267,10 +266,10 @@ h4{
 		min-width: 350px;
 	}
 	/*clase de los titulos de los trabajos*/
-	.titulo{
+	.underlogo .titulo {
 		margin-top: 30px!important;
-		font-size: 20px !important;
-		letter-spacing: 3px!important;
+		font-size: 16px !important;
+		letter-spacing: 2px!important;
 	}
 
 	/*clase de los subtitulos de los trabajos*/
@@ -292,11 +291,11 @@ h4{
 		min-width: 350px;
 	}
 	/*clase de los titulos de los trabajos*/
-	.titulo{
+	.underlogo .titulo {
 		margin-top: 30px!important;
-		font-size: 60px !important;
-		letter-spacing: 3px!important;
-		line-height: 60px!important;
+		font-size: 30px !important;
+		letter-spacing: 2px!important;
+		line-height: 50px!important;
 	}
 
 	/*clase de los subtitulos de los trabajos*/

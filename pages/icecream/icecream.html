@@ -6,10 +6,22 @@
     <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="../sharedstyles.css" type="text/css;charset=UTF-8">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
     <title>Sabrina Llorente</title>
     <link rel="shortcut icon" href="./../../Untitled-2-01.png">
     <link href="https://fonts.cdnfonts.com/css/museo-sans-rounded" rel="stylesheet">
+    <style>
+        .fade-in-section {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+        .fade-in-section.is-visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
 </head>
 <body class="white">
     
@@ -53,7 +65,7 @@
             </div>
         </div>
         <div class="col-md-12 ">
-            <div class="row no-gutters ">
+            <div class="row no-gutters fade-in-section">
                 <div class="col-md-7 d-flex flex-wrap">
                     <img src="img/1.png" class="img-fluid px-1 mt-2" alt="Image 1" width="40%">
                     <img src="img/2.png" class="img-fluid px-1 mt-2" alt="Image 2" width="60%">
@@ -64,12 +76,12 @@
                     <img src="img/icecream-first-video.gif" class="img-fluid px-1 mt-2" alt="Image 4">
                 </div>
             </div>
-            <div class="row no-gutters ">
+            <div class="row no-gutters fade-in-section">
                 <div class="col-md-12">
                     <img src="img/5.png" class="img-fluid px-1 mt-2" alt="Image 5">
                 </div>
             </div>
-            <div class="row no-gutters ">
+            <div class="row no-gutters fade-in-section">
                 <div class="col-md-4 col-offset-1 d-flex align-items-center container my-auto">
                     <p class="short-description">
                         Website Banners and Product<br>
@@ -83,15 +95,15 @@
             </div>
 
             <div class="row no-gutters ">
-                <div class="col-md-4 d-flex flex-wrap">
+                <div class="col-md-4 d-flex flex-wrap fade-in-section">
                     <img src="img/icecream-second-video.gif" class="img-fluid px-1 mt-2" alt="Image 1">
                     <img src="img/7.png" class="img-fluid px-1 mt-2" alt="Image 1">
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-4 fade-in-section">
                     <img src="img/8.png" class="img-fluid px-1 mt-2" alt="Image 4">
                     <img src="img/9.png" class="img-fluid px-1 mt-2" alt="Image 4">
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-4 fade-in-section">
                     <img src="img/10.png" class="img-fluid px-1 mt-2" alt="Image 4">
                     <img src="img/11.png" class="img-fluid px-1 mt-2" alt="Image 4">
                     <img src="img/12.png" class="img-fluid px-1 mt-2" alt="Image 4">
@@ -122,5 +134,32 @@
             </div>
         </footer>
     </div>
+
+<script>
+    $(document).ready(function() {
+        // Check if element is in viewport
+        function checkIfInView() {
+            $('.fade-in-section').each(function() {
+                var elementTop = $(this).offset().top;
+                var elementBottom = elementTop + $(this).outerHeight();
+                var viewportTop = $(window).scrollTop();
+                var viewportBottom = viewportTop + $(window).height();
+                
+                // Add some buffer so elements start to fade in before they're fully in view
+                if (elementBottom > viewportTop + 100 && elementTop < viewportBottom - 100) {
+                    $(this).addClass('is-visible');
+                }
+            });
+        }
+        
+        // Run on page load
+        checkIfInView();
+        
+        // Run on scroll
+        $(window).on('scroll resize', function() {
+            checkIfInView();
+        });
+    });
+</script>
 </body>
 </html>

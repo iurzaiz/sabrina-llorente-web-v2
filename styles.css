@@ -101,7 +101,7 @@ h4{
 .underlogo-works{
 	font-family: 'Museo Sans Rounded', sans-serif;
     font-size: 20px;
-    letter-spacing: 2px; 
+    letter-spacing: 0px;
     text-transform: uppercase;
     font-weight: 300;
     margin: 0;
@@ -115,7 +115,7 @@ h4{
 	margin: 0px 47px;
 	font-family: 'Museo Sans Rounded', sans-serif;
     font-size: 20px;
-    letter-spacing: 2px; 
+    letter-spacing: 0px; 
     text-transform: uppercase;
     font-weight: 300;
     margin-bottom: 40px;
@@ -156,6 +156,7 @@ h4{
 	flex-wrap: wrap;
 	justify-content: space-between;
 	margin: 0px 47px;
+	margin-bottom: -10px;
 }
 
 
@@ -335,4 +336,15 @@ h4{
 	.subtitulo{
 		font-size: 12px;
 	}
+}
+
+/* Add smooth scrolling behavior to the entire document */
+html {
+  scroll-behavior: smooth;
+}
+
+/* You can also add a specific transition time if needed */
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 20px; /* Optional: adds some padding at the top when scrolling to an element */
 }

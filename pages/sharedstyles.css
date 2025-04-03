@@ -111,6 +111,7 @@
     display: inline-flex; /* Ensures the button only takes up as much space as needed */
     max-width: fit-content; /* Prevents the button from expanding to full width */
     width: fit-content; 
+    transition: all 0.3s ease; /* Add transition for smooth effect */
 }
 .button-arrow {
     z-index: 2;
@@ -118,11 +119,13 @@
     padding-left: 12px;
     display: flex;
     position: relative;
+    transition: all 0.3s ease; /* Add transition for smooth effect */
 }
 .button-arrow-line {
     background-color: #323232;
     width: 35px;
     height: 2px;
+    transition: width 0.3s ease; /* Add transition for smooth width change */
 }
 .arrow-tip {
     width: 8px;
@@ -142,7 +145,8 @@
     padding: 5px 0px;
     font-family: 'Museo Sans Rounded' !important;
     font-weight: 250;
-    font-size: 27px;
+    font-size: 24px; /* Reduced from 27px (10% smaller) */
+    transition: all 0.3s ease; /* Add transition for smooth effect */
 }
 
 .backToProjects {
@@ -199,5 +203,18 @@
         font-weight: 250;
         font-size: 17px;
     }
+}
+
+/* Add hover effects */
+.primary-button:hover .button-arrow-line {
+    width: 50px; /* Increase width on hover */
+}
+
+.primary-button:hover .button-arrow {
+    padding-left: 18px; /* Increase padding to move arrow right */
+}
+
+.primary-button:hover {
+    padding-right: 25px; /* Optional: adjust right padding to balance the button */
 }
 

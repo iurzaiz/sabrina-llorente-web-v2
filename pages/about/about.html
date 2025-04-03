@@ -41,7 +41,7 @@
         </div>
     <div class="row no-gutters contenedor" >
         <div class="img col-md-6 my-auto">
-            <img src="./img/image.png" width="100%" alt="" style="margin-top: -400px;">
+            <img src="./img/image.png" width="100%" alt="" style="margin-top: -400px; opacity: 0; transition: opacity 1s ease-in-out;" class="delayed-image">
         </div>
         <div class="info col-md-4 my-auto mx-auto">
             <p class="presentacion">
@@ -53,10 +53,10 @@
             <p class="descripcion3">I'm available for collaborations and would love to chat with you!</p>
 
             <div class="row">
-                <div class="col-12 my-auto mx-auto" style="display: flex; justify-content: center;">
+                <div class="col-12 my-auto" style="padding-left: 0; margin-left: 0;">
                     <!-- button back -->
                     <a href="../../index.html#projects" class="backToProjects text-decoration-none text-reset">
-                        <div class="primary-button" bis_skin_checked="1">
+                        <div class="primary-button" bis_skin_checked="1" style="margin-left: 0;">
                             <input type="submit" data-wait="Please wait..." class="back-btn w-button" value="BACK TO ALL PROJECTS">
                             <div class="button-arrow" bis_skin_checked="1">
                                 <div class="button-arrow-line" bis_skin_checked="1">
@@ -77,6 +77,11 @@
         $(window).on("load", function() {
             // Animate loader off screen
             $("#loader").fadeOut("slow");
+            
+            // Show the image after 1 second
+            setTimeout(function() {
+                $(".delayed-image").css("opacity", "1");
+            }, 1000);
         });
     
         function adjustLayout() {

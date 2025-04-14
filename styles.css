@@ -287,16 +287,38 @@ h4{
 	}
 	.logo{
 		width: 100%;
-		font-size: 350%;
+		font-size: 300%;
 		max-width: 350px;
 		min-width: 350px;
+		line-height: 0.9;
+	}
+	.underlogo {
+		margin: 0;
+		width: 100%;
+		display: flex;
+		justify-content: space-between;
+	}
+	.underlogo-works, .underlogo-about {
+		margin: 0;
+		padding: 0;
+		margin-top: 7px;
+		background-color: transparent;
+	}
+	.underlogo-works {
+		text-align: left;
+		margin-left: 63px;
+	}
+	.underlogo-about {
+		text-align: right;
+		margin-right: 63px;
 	}
 	/*clase de los titulos de los trabajos*/
 	.underlogo .titulo {
 		margin-top: 30px!important;
 		font-size: 30px !important;
-		letter-spacing: 2px!important;
+		letter-spacing: 0.5px!important;
 		line-height: 50px!important;
+		
 	}
 
 	/*clase de los subtitulos de los trabajos*/

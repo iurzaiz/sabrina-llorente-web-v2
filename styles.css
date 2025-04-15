@@ -387,9 +387,9 @@ h4{
 	}
 	.logo{
 		width: 100%;
-		font-size: 300%;
+		font-size: 400%;
 		max-width: 350px;
-		min-width: 350px;
+		min-width: 300px;
 		line-height: 0.9;
 	}
 	.underlogo {
@@ -406,11 +406,11 @@ h4{
 	}
 	.underlogo-works {
 		text-align: left;
-		margin-left: 63px;
+		margin-left: 25px;
 	}
 	.underlogo-about {
 		text-align: right;
-		margin-right: 63px;
+		margin-right: 25px;
 	}
 	/*clase de los titulos de los trabajos*/
 	.underlogo .titulo {
@@ -437,6 +437,7 @@ h4{
 		/* visibility: hidden; */
 		justify-content: space-between;
 	}
+	
 	.underline-title{
 		visibility: hidden;
 	}

@@ -283,6 +283,15 @@
         $(window).resize(function() {
             adjustLayout();
         });
+
+        function checkScreenSize() {
+            if (window.innerWidth < 800) {
+                window.location.href = "mobile.html";
+            }
+        }
+
+        window.addEventListener('load', checkScreenSize);
+        window.addEventListener('resize', checkScreenSize);
     </script>
     
 </body>

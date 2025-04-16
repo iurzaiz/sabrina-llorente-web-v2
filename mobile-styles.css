@@ -65,17 +65,7 @@ h4{
     margin: 0;
     padding: 0;
 }
-.underlogo-about, 
-.underlogo-works{
-	font-family: 'Museo Sans Rounded', sans-serif;
-    font-size: 20px;
-    letter-spacing: 0px;
-    text-transform: uppercase;
-    font-weight: 300;
-    margin: 0;
-    padding: 0;
-	margin-top: -10px;
-}
+
 
 .underline-title {
 	display: flex;
@@ -130,13 +120,19 @@ h4{
 	margin: 0;
 	width: 100%;
 }
-
-.underlogo-works, .underlogo-about {
-	margin: 0;
-	padding: 0;
-	margin-top: 7px;
+.underlogo-about, 
+.underlogo-works{
+	font-family: 'Museo Sans Rounded', sans-serif;
+    font-size: 20px;
+    letter-spacing: 0px;
+    text-transform: uppercase;
+    font-weight: 300;
+    margin: 0;
+    padding: 0;
+	margin-top: -40px;
 	background-color: transparent;
 }
+
 .underlogo-works {
 	text-align: left;
 	margin-left: 25px;
@@ -144,15 +140,6 @@ h4{
 .underlogo-about {
 	text-align: right;
 	margin-right: 25px;
-}
-
-/*clase de los titulos de los trabajos*/
-.titulo {
-	font-family: "SephoraDisplayLightItalic" !important;
-	font-size: 25px !important;
-	/* letter-spacing: 0.5px!important; */
-	line-height: 37px;
-	font-weight: 300;
 }
 
 .underlogo {
@@ -169,7 +156,7 @@ h4{
 	position: relative;
 	height: auto;
 	width: 100%;
-	margin-bottom: 600px;
+	margin-bottom: 670px;
 }
 
 .image_project{
@@ -197,26 +184,7 @@ h4{
 	margin: 0;
 }
   
-.desvanecer:hover {
-	opacity: 0.07;
-	overflow: hidden;
-	height: 100%;
-	-webkit-transition: opacity 500ms;
-	-moz-transition: opacity 500ms;
-	-o-transition: opacity 500ms;
-	-ms-transition: opacity 500ms;
-	transition: opacity 500ms;
-}
 
-.project_info{
-	height: 100%;
-	width: 100%;
-	margin-top: 20px;
-	padding-left: 30px !important;
-	padding-top: 30px !important;
-	text-align: left;
-	padding-right: 30px !important;
-}
 
 .letraBlanca{
 	color: white !important;
@@ -250,10 +218,30 @@ h4{
 }
 
 .footer .back-btn {
-	font-size: 15px;
+	font-size: 18px;
 	/* padding: 5px 7px; */
 	width: auto !important;
 	max-width: 80%;
+}
+
+/* Add responsive styles for the back button */
+@media screen and (max-width: 480px) {
+  .footer .back-btn {
+    font-size: 16px;
+  }
+  .primary-button {
+    max-width: 70%;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .footer .back-btn {
+    font-size: 14px;
+  }
+  
+  .primary-button {
+    max-width: 60%;
+  }
 }
 
 .primary-button {

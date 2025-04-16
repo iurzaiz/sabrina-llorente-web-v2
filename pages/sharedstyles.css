@@ -170,22 +170,22 @@
     }
 
     .credits{
-        margin-top: -200px !important;
+        margin-top: -50px !important;
     }
     .flanco-derecho, .flanco-izquierdo{
         text-align: center !important;
         size: 100% !important;
         margin-right: auto;
-        margin-top: 75px;
+        margin-top: 30px;
     }
 	.credits{
         max-width: 100%;
         text-align: left;
-        margin-top: -55px ;
-        margin-bottom: 50px;
+        margin-top: -25px;
+        margin-bottom: 20px;
     }
     .container{
-        margin-top: 150px ;
+        margin-top: 30px;
     }
     .autorPagina{
         visibility: hidden;
@@ -244,6 +244,12 @@
 
 /* Adjust the bottom margin of the credits section */
 .credits-container {
-    margin-bottom: 35px; /* Reduced from 50px to 30px for better balance */
+    margin-bottom: 20px;
+}
+
+@media screen and (min-width:769px) {
+    .credits-container {
+        margin-bottom: 35px;
+    }
 }
 

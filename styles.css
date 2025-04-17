@@ -167,7 +167,7 @@ h4{
 	position: relative;
 	height: auto;
 	width: 100%;
-	margin-bottom: 800px;
+	margin-bottom: 85vh;
 }
 
 .image_project{
@@ -255,187 +255,20 @@ h4{
     text-align: center;
     
 }
-@media screen and (max-width: 500px) {
-	.column-1, .column-2, .column-3 {
-		flex: 100%;
-		max-width: 100%;
-	}
+		
+
+@media screen and (max-width:1015px){
 	.logo{
-		width: 100%;
-		font-size: 350%;
-		max-width: 350px;
-		min-width: 350px;
-	}
-	/*clase de los titulos de los trabajos*/
-	.underlogo .titulo {
-		margin-top: 30px!important;
-		font-size: 16px !important;
-		letter-spacing: 2px!important;
-	}
-
-	/*clase de los subtitulos de los trabajos*/
-	.subtitulo{
-		font-size: 20px !important;
-	}
-}
-
-/* Add new media query for very small screens */
-@media screen and (max-width: 400px) {
-	.logo {
-		font-size: 250%;
-		max-width: 300px;
-		min-width: 300px;
-		margin: 0 auto;
+		width: 70%;
 		text-align: center;
-	}
-	
-	.underlogo-works, .underlogo-about {
-		font-size: 16px;
-	}
-	
-	.underlogo {
-		margin: 0 auto;
-		width: 90%;
-		display: flex;
-		justify-content: space-between;
-	}
-	
-	.project_info {
-		padding-left: 15px !important;
-		padding-top: 10px !important;
-		padding-right: 15px !important;
-	}
-	
-	.titulo {
-		font-size: 22px !important;
-		line-height: 24px !important;
-	}
-	
-	.subtitulo {
-		font-size: 14px !important;
-	}
-	
-	.footer .back-btn {
-		font-size: 12px;
-		padding: 8px 12px;
-		width: auto !important;
-		max-width: 90%;
-	}
-	
-	.primary-button {
-		max-width: 90%;
-		margin: 0 auto;
-		display: flex;
-		justify-content: center;
-	}
-	
-	.button-arrow {
-		transform: scale(0.8);
-	}
-	
-	.footer {
-		width: 100%;
-		display: flex;
-		justify-content: center;
-	}
-	
-	.footer .row {
-		width: 100%;
-		justify-content: center;
-	}
-}
-
-/* Extra small devices (phones, 360px and down) */
-@media screen and (max-width: 360px) {
-	.logo {
-		font-size: 200%;
-		max-width: 280px;
-		min-width: 280px;
-		margin: 0 auto;
-		text-align: center;
-		width: 100%;
-	}
-	
-	.underlogo {
-		width: 100%;
-		padding: 0 10px;
-		justify-content: center;
-	}
-	
-	.underlogo-works {
-		margin-right: 20px;
-	}
-	
-	.underlogo-about {
-		margin-left: 20px;
-	}
-	
-	.primary-button {
-		max-width: 85%;
-	}
-	
-	.footer .back-btn {
-		font-size: 11px;
-		padding: 6px 10px;
-	}
-}
-
-@media screen and (max-width: 800px) {
-	.column-1, .column-2, .column-3 {
-		flex: 100%;
-		max-width: 100%;
-	}
-	.logo{
-		width: 100%;
-		font-size: 400%;
-		max-width: 350px;
-		min-width: 300px;
-		line-height: 0.9;
-	}
-	.underlogo {
-		margin: 0;
-		width: 100%;
-		display: flex;
-		justify-content: space-between;
-	}
-	.underlogo-works, .underlogo-about {
-		margin: 0;
-		padding: 0;
-		margin-top: 7px;
-		background-color: transparent;
 	}
 	.underlogo-works {
 		text-align: left;
-		margin-left: 25px;
+		margin-left: 65px;
 	}
 	.underlogo-about {
 		text-align: right;
-		margin-right: 25px;
-	}
-	/*clase de los titulos de los trabajos*/
-	.underlogo .titulo {
-		margin-top: 30px!important;
-		font-size: 30px !important;
-		letter-spacing: 0.5px!important;
-		line-height: 50px!important;
-		
-	}
-
-	/*clase de los subtitulos de los trabajos*/
-	.subtitulo{
-		font-size: 20px !important;
-	}
-}
-		
-
-@media screen and (max-width:1039px){
-	.logo{
-		width: 80%;
-		text-align: center;
-	}	
-	.underlogo{
-		/* visibility: hidden; */
-		justify-content: space-between;
+		margin-right: 65px;
 	}
 	
 	.underline-title{
@@ -461,7 +294,7 @@ h4{
 	}
 	/* Adjusted projects container margin */
 	#projects {
-		margin-bottom: 600px !important; /* Increased from 400px */
+		margin-bottom: 70vh !important; /* Changed from fixed 600px to relative viewport height */
 	}
 }
 

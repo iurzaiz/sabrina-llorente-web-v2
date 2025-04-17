@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css" type="text/css;charset=UTF-8">
-    <link rel="stylesheet" href="../../styles.css" type="text/css;charset=UTF-8">
+    <link rel="stylesheet" href="../../mobile-styles.css" type="text/css;charset=UTF-8">
     <link rel="stylesheet" href="../sharedstyles.css" type="text/css;charset=UTF-8">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
         integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
@@ -19,16 +19,16 @@
 </head>
 
 <body class="white col-md-12 d-flex flex-column">
-    <div class="logo mx-auto logo-margin text-center">
+    <div class="logo mx-auto">
         SABRINA LLORENTE
         </br>
         <div class="underlogo">
-            <a href="../../index.html" class="text-decoration-none text-reset">
+            <a href="../../index.html#projects" class="text-decoration-none text-reset">
                 <div class="underlogo-works">
                     WORKS
                 </div>
             </a>
-            <a href="./pages/about/about.html" class="text-decoration-none text-reset">
+            <a href="#" class="text-decoration-none text-reset">
                 <div class="underlogo-about">
                     ABOUT
                 </div>
@@ -36,9 +36,6 @@
         </div>
     </div>
     <hr style="border: 1px solid #000;" id="projects">
-        <div class="underline-title no-gutters" >
-            ABOUT
-        </div>
     <div class="row no-gutters contenedor" >
         <div class="img col-md-6 my-auto">
             <img src="./img/image.png" width="100%" alt="" style="margin-top: -400px; opacity: 0; transition: opacity 1s ease-in-out;" class="delayed-image">
@@ -100,15 +97,6 @@
         $(window).resize(function() {
             adjustLayout();
         });
-
-        function checkScreenSize() {
-            if (window.innerWidth < 800) {
-                window.location.href = "about-mobile.html";
-            }
-        }
-
-        window.addEventListener('load', checkScreenSize);
-        window.addEventListener('resize', checkScreenSize);
     </script>
 </body>
 

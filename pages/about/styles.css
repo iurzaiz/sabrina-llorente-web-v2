@@ -73,15 +73,12 @@
         margin-top: 5%;
     }
     .descripcion1{
-        font-family: "SephoraDisplayLight";
         font-size: 150%;
     }
     .descripcion2{
-        font-family: "SephoraDisplayLightItalic";
         font-size: 150%;
     }
     .descripcion3{
-        font-family: "SephoraDisplayBook";
         font-size: 150%;
         margin-bottom: 10% !important;
     }
@@ -91,7 +88,7 @@
     }
 }
 
-@media screen and (max-width:768px){
+@media screen and (max-width:800px){
     .info{
         max-width: 80% !important;
     }
@@ -123,39 +120,3 @@
     }
     
 }
-
-@media screen and (max-width:400px){
-    .info{
-        max-width: 80% !important;
-        text-align: center;
-    }
-    .presentacion{
-        font-family: "SephoraDisplayLight" !important;
-        height: 100%;
-        width: 100%;
-        text-align: left;
-        font-size: 250%;
-        font-weight: 500;
-        margin-top: 5%;
-        text-align: center;
-    }
-    .descripcion1{
-        font-family: "SephoraDisplayLight";
-        font-size: 120%;
-    }
-    .descripcion2{
-        font-family: "SephoraDisplayLightItalic";
-        font-size: 120%;
-    }
-    .descripcion3{
-        font-family: "SephoraDisplayBook";
-        font-size: 120%;
-        margin-bottom: 10% !important;
-    }
-    .icon{
-        float: left;
-        width: 80% !important;
-    }
-    
-}
-	

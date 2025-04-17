@@ -294,7 +294,7 @@ h4{
 	}
 	/* Adjusted projects container margin */
 	#projects {
-		margin-bottom: 80vh !important; /* Changed from fixed 600px to relative viewport height */
+		margin-bottom: 80vh !important;
 	}
 }
 

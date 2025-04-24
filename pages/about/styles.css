@@ -11,6 +11,11 @@
 	src: url("../../fonts/SephoraSerifDisplayDigital-Light.otf");
   }
 
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 20px;
+}
+
 .presentacion{
     font-family: "SephoraDisplayLight" !important;
     height: 100%;
@@ -18,19 +23,22 @@
     text-align: left;
     font-size: 350%;
     font-weight: 500;
-    line-height: 0.9;
+    line-height: 1.2;
 }
 .descripcion1{
     font-family: "SephoraDisplayLight";
     font-size: 120%;
+    line-height: 1.2;
 }
 .descripcion2{
     font-family: "SephoraDisplayLightItalic";
     font-size: 100%;
+    line-height: 1.2;
 }
 .descripcion3{
     font-family: "SephoraDisplayBook";
     font-size: 120%;
+    line-height: 1.2;
     margin-bottom: 10%;
 }
 .icon{
@@ -108,11 +116,11 @@
     }
     .descripcion2{
         font-family: "SephoraDisplayLightItalic";
-        font-size: 150%;
+        font-size: 120%;
     }
     .descripcion3{
         font-family: "SephoraDisplayBook";
-        font-size: 150%;
+        font-size: 100%;
         margin-bottom: 10% !important;
     }
     .icon{

@@ -48,10 +48,10 @@
                     I'm Sabrina</p>
                 <p class="descripcion1">A multidisciplinary graphic designer based in Berlin.</p>
                 <p class="descripcion2"> With a focus on branding, packaging, and motion design, 
-                    I’ve had the chance to collaborate with brands like Sephora, Indigo Chapters, TJX Canada, 
+                    I've had the chance to collaborate with brands like Sephora, Indigo Chapters, TJX Canada, 
                     FCA Canada, TDP, Urban Planet, and At Home.
                 </p>
-                <p class="descripcion3"> I'm always open to creative collaborations — let’s connect and make something great together.</p>
+                <p class="descripcion3"> I'm always open to creative collaborations — let's connect and make something great together.</p>
 
                 <div class="row">
                     <div class="col-12 my-auto" style="padding-left: 0; margin-left: 0;">
@@ -81,6 +81,11 @@
             $("#loader").fadeOut("slow", function() {
                 $(".main-content").fadeIn("slow");
                 adjustLayout();
+                
+                // Scroll to projects section after content is loaded
+                setTimeout(function() {
+                    document.getElementById('projects').scrollIntoView({ behavior: 'smooth' });
+                }, 500);
             });
             
             // Show the image after 1 second
